@@ -1,5 +1,5 @@
 export const sendMessage = async (question: string) => {
-  const res = await fetch("http://localhost:5000/api/chat", {
+  const res = await fetch(`${process.env.BACKEND_URL}/api/chat`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
